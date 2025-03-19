@@ -22,6 +22,6 @@ def home():
         return f"MySQL Connected to {db_name[0]}"
     except Exception as e:
         return f"Error: {str(e)}"
-
-if __name__ == '__main__':
-    app.run(debug=True)
+    
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=10000)

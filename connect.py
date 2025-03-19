@@ -24,7 +24,7 @@ def search_donors(blood_type, location):
     SELECT donor_id, name, blood_type, location, contact_number, email
     FROM donors
     WHERE blood_type = %s AND location = %s
-    """
+    """"
     
     cursor.execute(query, (blood_type, location))
     donors = cursor.fetchall()
